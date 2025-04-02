@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e3f2fd;  /* Soft Blue for Light Mode */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #121212; 
+    color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 700px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode .container {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.input-group input, select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background: #fff;
+}
+
+/* Dark Mode Inputs */
+.dark-mode .input-group input, 
+.dark-mode select {
+    background: #222;
+    color: #fff;
+    border-color: #666;
+}
+
+/* Centered Simulate Button */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Light Mode Button */
+button {
+    background: #007bff;
+    color: white;
+}
+
+/* Dark Mode Button */
+.dark-mode button {
+    background: #ff5722;
+    color: white;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Dark Mode Toggle */
+#toggle-theme {
+    padding: 6px 10px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+/* Icons for Dark Mode Toggle */
+.sun { display: none; }
+.dark-mode .sun { display: inline; }
+.dark-mode .moon { display: none; }
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.creator-name {
+    color: #ff5722;
+}
+
